@@ -13,6 +13,7 @@ from data_util import generate_tracking_statuses
 load_dotenv()
 
 app = Flask(__name__)
+app.json.ensure_ascii = False
 
 @app.route('/')
 def check():
